@@ -1,0 +1,38 @@
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="cold-md-12">
+      <div class="radio-wrapper">
+        <ul>
+          <li *ngFor="let list of radioList, let i = index">
+            <span class="m-1">{{list.value}}</span>
+            <span class="m-1">
+              Yes <input [value]="'Yes'" type="radio" name="list_{{list.id}}" (change)="onSelectionChange(list, 'y')">
+            </span>
+            <span class="m-1">
+              No <input [value]="'No'" type="radio" name="list_{{list.id}}" (change)="onSelectionChange(list, 'n')">
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button (click)="nextPage()">Next</button>
+        <a routerLink="level2">Next</a>
+      </div>
+
+      <div>
+        <ul>
+          <li *ngFor="let r of result">
+            <span>{{r.value}}</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+<nav>
+  <a routerLink="level1">Level 1</a>
+  <a routerLink="level2">Level 2</a>
+</nav>
+<router-outlet></router-outlet>

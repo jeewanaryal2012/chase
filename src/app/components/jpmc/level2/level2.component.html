@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="cold-md-12">
+      <div class="radio-wrapper">
+        <ul>
+          <li *ngFor="let list of listData, let i = index">
+            <span class="m-1">{{list.value}}</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <!-- <button (click)="nextPage()">Next</button> -->
+        <a [routerLink]="['../level1']">Back</a>
+      </div>
+    </div>
+  </div>
+</div>
